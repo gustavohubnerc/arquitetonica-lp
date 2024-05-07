@@ -16,15 +16,13 @@ interface NavItemProps {
 function NavItem({ children, href, target }: NavItemProps) {
   return (
     <li>
-      <Typography
-        as="a"
+      <a
         href={href || "#"}
         target={target || "_self"}
-        variant="small"
-        className="font-medium"
+        className="text-sm font-medium"
       >
         {children}
-      </Typography>
+      </a>
     </li>
   );
 }
@@ -126,21 +124,10 @@ export function Navbar() {
       <Collapse open={open}>
         <div className="container mx-auto mt-4 rounded-lg border-t border-blue-gray-50 bg-white px-6 py-5">
           <ul className="flex flex-col gap-4 text-blue-gray-900">
-            <NavItem>Home</NavItem>
+            <NavItem href="/">Home</NavItem>
             <NavItem href="/about">Sobre nós</NavItem>
             <NavItem>Contato</NavItem>
           </ul>
-          <div className="mt-4 flex items-center gap-2">
-            <IconButton variant="text" color="gray" size="sm">
-              <i className="fa-brands fa-twitter text-base" />
-            </IconButton>
-            <IconButton variant="text" color="gray" size="sm">
-              <i className="fa-brands fa-facebook text-base" />
-            </IconButton>
-            <IconButton variant="text" color="gray" size="sm">
-              <i className="fa-brands fa-instagram text-base" />
-            </IconButton>
-          </div>
         </div>
       </Collapse>
     </MTNavbar>

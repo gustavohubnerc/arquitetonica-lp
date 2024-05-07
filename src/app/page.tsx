@@ -7,7 +7,6 @@ import VideoIntro from "./video-intro";
 import Feature from "./feature";
 import MobileConvenience from "./mobile-convenience";
 import Testimonials from "./testimonials";
-import Faqs from "./faqs";
 import Container from "./slideshow/container";
 
 export default function Campaign() {
@@ -20,7 +19,6 @@ export default function Campaign() {
       {/* <Feature /> */}
       {/* <MobileConvenience /> */}
       {/* <Testimonials /> */}
-      {/* <Faqs /> */}
       <Footer />
     </>
   );
