@@ -31,14 +31,13 @@ export function Features() {
   return (
     <section className="py-10 px-4 mt-24">
       <div className="container mx-auto mb-20 text-center">
-        <Typography color="blue-gray" className="mb-2 font-bold uppercase">
+        <h5 color="blue-gray" className="mb-2 font-bold uppercase">
           Sobre nós
-        </Typography>
-        <Typography variant="h1" color="blue-gray" className="mb-4">
+        </h5>
+        <h1 color="blue-gray" className="mb-4">
           A concepção de um projeto exige muita dedicação e estudo.
-        </Typography>
-        <Typography
-          variant="lead"
+        </h1>
+        <h3
           className="mx-auto w-full px-4 !text-gray-500 lg:w-11/12 lg:px-8 "
         >
           Tudo é importante. O todo é fundamental.
@@ -49,7 +48,7 @@ export function Features() {
           Construir esses espaços e torná-los realidade.
           Espaços para morar, para trabalhar, para aprender e ensinar.
           Espaços para viver.
-        </Typography>
+        </h3>
       </div>
       <div className="container mx-auto grid max-w-6xl grid-cols-1 gap-4 gap-y-12 md:grid-cols-2">
         {FEATURES.map((props, idx) => (

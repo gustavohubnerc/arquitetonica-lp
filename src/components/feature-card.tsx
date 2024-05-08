@@ -1,33 +1,18 @@
-import {
-    Typography,
-    Card,
-    CardBody,
-  } from "@material-tailwind/react";
-  
-  
-  interface FeatureCardProps {
-    icon: React.ElementType;
-    title: string;
-    children: React.ReactNode;
-  }
-  
-  export function FeatureCard({ icon: Icon, title, children }: FeatureCardProps) {
-    return (
-      <Card color="transparent" shadow={false}>
-        <CardBody className="grid justify-start">
-          {/* <div className="mb-4 grid h-12 w-12 place-content-center rounded-lg bg-gray-900 p-2.5 text-left text-white">
-            <Icon className="h-6 w-6" />
-          </div> */}
-          <h5 color="blue-gray" className="mb-2">
-            {title}
-          </h5>
-          <Typography className=" font-normal !text-gray-500">
-            {children}
-          </Typography>
-        </CardBody>
-      </Card>
-    );
-  }
 
-  export default FeatureCard;
+interface FeatureCardProps {
+  title: string;
+  children: string;
+}
+
+export function FeatureCard({title, children}: FeatureCardProps) {
+  return (
+    <div className="bg-white shadow-lg rounded-lg p-4">
+      <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
+      <p className="mt-2 text-gray-600">{children}
+      </p>
+    </div>
+  )
+}
+
+export default FeatureCard;
   

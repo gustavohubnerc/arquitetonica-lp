@@ -57,14 +57,10 @@ export function Navbar() {
   }, []);
 
   return (
-    <MTNavbar
-      fullWidth
-      shadow={false}
-      blurred={false}
-      color={isScrolling ? "white" : "transparent"}
-      className="fixed top-0 z-50 border-0 bg-blue-gray-800"
+    <div
+      className="w-full fixed top-0 z-50 border-0 bg-blue-gray-800"
     >
-      <div className="container mx-auto flex items-center justify-between h-16">
+      <div className="container mx-auto flex items-center justify-between h-24">
         <div className="mt-2">
           <img src="/image/logo.png" alt="Logo" width={120} height={40} />
         </div>
@@ -130,7 +126,7 @@ export function Navbar() {
           </ul>
         </div>
       </Collapse>
-    </MTNavbar>
+    </div>
   );
 }
 
