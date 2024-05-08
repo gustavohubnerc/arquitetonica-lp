@@ -2,7 +2,7 @@
 
 export function Footer() {
   return (
-    <footer className="mt-2 bg-blue-gray-800 px-8 pt-6">
+    <div className="mt-2 bg-blue-gray-800 px-8 pt-6">
       <div className="container mx-auto">
         <div className="flex flex-wrap justify-center gap-8 md:justify-between">
           <div className="text-center md:text-left">
@@ -18,7 +18,7 @@ export function Footer() {
           </h6>
         </div>
       </div>
-    </footer>
+    </div>
   );
 }
 

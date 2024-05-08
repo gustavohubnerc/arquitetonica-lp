@@ -41,12 +41,12 @@ const Slideshow = () => {
           <img src={image} alt={`slide ${index}`} />
         </Slide>
       ))}
-      <IconButton className="absolute top-1/2 left-0 transform -translate-y-1/2" onClick={handlePrev}>
+      {/* <IconButton className="absolute top-1/2 left-0 transform -translate-y-1/2" onClick={handlePrev}>
         <ArrowBackIosSharpIcon />
       </IconButton>
       <IconButton className="absolute top-1/2 right-0 transform -translate-y-1/2" onClick={handleNext}>
         <ArrowForwardIosSharpIcon />
-      </IconButton>
+      </IconButton> */}
     </div>
   );
 };
