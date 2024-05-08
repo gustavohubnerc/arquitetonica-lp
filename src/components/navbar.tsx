@@ -4,7 +4,6 @@ import {
   Collapse,
   IconButton,
   Typography,
-  Button,
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
@@ -76,18 +75,16 @@ export function Navbar() {
             Docs
           </NavItem>
         </ul>
-        <Button
-          variant="text"
-          color={isScrolling ? "gray" : "white"}
+        <button
           onClick={handleOpen}
-          className="ml-auto inline-block lg:hidden"
+          className="!text-white ml-auto inline-block lg:hidden pr-4"
         >
           {open ? (
             <XMarkIcon strokeWidth={2} className="h-6 w-6" />
           ) : (
             <Bars3Icon strokeWidth={2} className="h-6 w-6" />
           )}
-        </Button>
+        </button>
       </div>
       <Collapse open={open}>
         <div className="container mx-auto mt-4 rounded-lg border-t border-blue-gray-50 bg-white px-6 py-5">
